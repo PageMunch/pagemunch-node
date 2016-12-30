@@ -2,7 +2,7 @@
 
 ## Introduction
 
-PageMunch is a simple API backed by an intelligent web crawler that lets you extract rich previews, entites and images from any url. Whether you want to grab the best title, description and image for a page, prices, authorship, enable video embeds or more.
+PageMunch is a simple API backed by an intelligent web crawler that lets you extract rich previews, entities and images from any url. Whether you want to grab the best title, description and image for a page, prices, authorship, enable video embeds or more.
 
 
 ## Installation
