@@ -1,20 +1,35 @@
-# PageMunch - Web crawler for node.js
-
+# PageMunch - Link Unfurling
 
 ## Introduction
 
-PageMunch is a simple API backed by an intelligent web crawler, that lets you extract data from any webpage on the internet in milliseconds. Whether you want to grab the best title, description and image for a page, prices, authorship, enable video embeds or more. We make it crazy easy to treat the web like a database.
+PageMunch is a simple API backed by an intelligent web crawler that lets you extract rich previews, entites and images from any url. Whether you want to grab the best title, description and image for a page, prices, authorship, enable video embeds or more.
 
 
 ## Installation
- 
-    $ npm install pagemunch
+
+```
+$ npm install pagemunch
+```
+
+## Usage
+
+```javascript
+const pm = require('pagemunch');
+
+pm.set({key: 'YOUR_API_KEY'});
+
+pm.extract('http://www.youtube.com/watch?v=9bZkp7q19f0', function(err, data) {
+  if (err) throw err;
+
+  console.log(data);
+});
+```
 
 ## More Details
 
-For more information, libraries and documentation check out the **[PageMunch Documentation](http://www.pagemunch.com/docs "PageMunch - Web crawler, metadata extraction")**
+For more information, libraries and documentation check out the **[PageMunch Documentation](http://www.pagemunch.com/docs "PageMunch - Link unfurling, metadata")**
 
 
 ## License
 
-This module is Copyright PageMunch 2013.
+Copyright PageMunch 2017.

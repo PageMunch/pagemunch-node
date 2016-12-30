@@ -1,12 +1,12 @@
 {
   "name" : "pagemunch",
-  "description" : "A node.js wrapper for the PageMunch web crawler API",
+  "description" : "A node.js wrapper for the PageMunch link unfurling API",
   "homepage": "http://www.pagemunch.com",
   "keywords" : ["web", "crawler", "spider", "metadata", "parsing", "link", "url", "microformats", "schema.org", "json"],
   "author": "Tom Moor <tomm.moor@gmail.com> (http://tommoor.com)",
   "contributors" : [
     "Tom Moor <tom.moor@gmail.com> (http://tommoor.com)",
-    "PageMunch <tom@pagemunch.com> (http://www.pagemunch.com)"
+    "PageMunch <support@pagemunch.com> (https://www.pagemunch.com)"
   ],
   "dependencies" : {
     "http-agent" : "*"
@@ -16,5 +16,5 @@
     "url": "git://github.com/pagemunch/pagemunch-node.git"
   },
   "main" : "./lib/pagemunch.js",
-  "version" : "0.1.0"
+  "version" : "0.2.0"
 }
