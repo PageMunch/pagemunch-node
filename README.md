@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/pagemunch.svg)](https://badge.fury.io/js/pagemunch)
+
 # PageMunch - Link Unfurling
 
 ## Introduction
