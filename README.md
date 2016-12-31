@@ -13,11 +13,14 @@ $ npm install pagemunch
 
 ## Usage
 
+We recommend storing your API key in an environment variable, for security and to
+enable using different keys in your staging, development and production environments.
+
+### Callbacks / ES5
 ```javascript
-const pm = require('pagemunch');
+const PageMunch = require('pagemunch');
 
-pm.set({key: 'YOUR_API_KEY'});
-
+const pm = new PageMunch(process.env.PAGEMUNCH_API_KEY);
 pm.extract('http://www.youtube.com/watch?v=9bZkp7q19f0', function(err, data) {
   if (err) throw err;
 
@@ -25,9 +28,18 @@ pm.extract('http://www.youtube.com/watch?v=9bZkp7q19f0', function(err, data) {
 });
 ```
 
+### Promises / ES6
+```javascript
+import PageMunch from 'pagemunch';
+
+const pm = new PageMunch(process.env.PAGEMUNCH_API_KEY);
+const data = await pm.extract('http://www.youtube.com/watch?v=9bZkp7q19f0');
+console.log(data);
+```
+
 ## More Details
 
-For more information, libraries and documentation check out the **[PageMunch Documentation](http://www.pagemunch.com/docs "PageMunch - Link unfurling, metadata")**
+For more information, libraries and documentation check out the **[PageMunch Documentation](https://www.pagemunch.com/docs "PageMunch - Link unfurling, metadata")**
 
 
 ## License
